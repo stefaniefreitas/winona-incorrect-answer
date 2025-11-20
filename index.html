@@ -50,6 +50,7 @@
     }
 
     .cta-button {
+      margin-top: 30px;
       background-color: #AF8EFF; /* button purple */
       color: #ffffff;
       text-decoration: none;
@@ -72,11 +73,11 @@
 
     @media (max-width: 600px) {
       .card {
-        padding: 24px 16px 32px;
+        padding: 5px 5px 5px;
       }
 
       .button-row {
-        gap: 24px;
+        gap: 10px;
       }
 
       .cta-button {
@@ -90,10 +91,20 @@
   <div class="page-wrapper">
     <div class="card">
       <!-- RESULT IMAGE -->
-      <img
-        src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/d68a0bd376bc46a0950c31c47abf8022/Question%201%20-%20Incorrect_2.png"
-        alt="Not quite - quiz result"
-      />
+      <picture>
+  <!-- MOBILE version -->
+  <source 
+    srcset="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/d68a0bd376bc46a0950c31c47abf8022/Question%201%20-%20Incorrect-mobile.png"
+    media="(max-width: 600px)"
+  />
+
+  <!-- DESKTOP version -->
+  <img
+    src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/d68a0bd376bc46a0950c31c47abf8022/Question%201%20-%20Incorrect_3.png"
+    alt="Not quite - quiz result"
+    style="width: 100%; height: auto; display: block; margin: 0 auto;"
+  />
+</picture>
 
       <!-- CLICKABLE BUTTONS -->
       <div class="button-row">
